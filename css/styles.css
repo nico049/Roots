@@ -1,0 +1,135 @@
+/*reset*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos nav*/
+header{
+    position: sticky;
+    top:0;
+}
+nav{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    background-color: rgba(0, 0, 0, 0.863);
+    display: grid;
+    grid-template-areas: "imagenLogo"
+                         "ul";
+    justify-content: space-around;
+}
+.imagenLogo{
+    grid-area: imagenLogo;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    grid-area: ul;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.1rem ;
+    list-style-type: none;
+    font-size: 0.90rem;
+    font-weight: bold; 
+    box-sizing: border-box;
+}
+nav ul li a{
+    text-decoration: none ;
+    color: #d32323;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+/*edicion de imagen logo*/
+header img{
+    width: 25%;    
+}
+/* estilos de main*/
+.mainPrincipal{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgb(189, 187, 187));
+}
+h1{
+    text-align: center;
+    color: #d32323;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.texto{
+    text-align: justify;
+}
+main div{
+    display: flex;
+    justify-content: center;
+} 
+/*tamaño de imagen pagina principal*/
+.imagenPrincipal{
+    width: 90%; 
+}
+/*logo de whatsapp*/
+.logoWhatsapp{
+    width: 7%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+/*Color de Footer*/
+footer{
+    background-image: linear-gradient(rgb(189, 187, 187), rgb(228, 227, 227));
+}
+.copyright{
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+}
+/*mq*/
+@media screen and (min-width:1024px) {
+    nav{
+        grid-template-areas: "imagenLogo ul";
+        justify-content: space-evenly;
+    }
+    .imagenLogo{
+        grid-area: imagenLogo;
+        width: 50%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;  
+    }
+    nav ul{
+        grid-area: ul;
+        display: flex;
+        justify-content: left;
+    }
+    .imagenPrincipal{
+        width: 30%;
+    }
+    .logoWhatsapp{
+        width: 2.3%;
+    }
+    nav ul li{
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    main section img{
+        width: 5%;
+    }
+}
+/*estilos de page campanias*/
+main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgb(189, 187, 187));
+}
+.fotosCampanias{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+main section img{
+    width: 40%;
+    object-fit: cover;
+    margin: 0.3rem;
+}
