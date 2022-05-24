@@ -90,11 +90,4 @@ main div{
     }
 }
 /*estilos de page campanias*/
-.carousel-inner{
-    display: flex;
-    align-items: center;
-}
-.img-responsive{
-    height: 100%;
-    width: 20vh;
-}
+
