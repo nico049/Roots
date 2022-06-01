@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilo de body */
+body {
+  background-color: #726A95; }
+
+/* Estilos nav */
+header .nav-link {
+  font-family: "Medula One";
+  color: #191919;
+  font-weight: bold;
+  font-size: 1.6rem; }
+
+/* estilo main pagina principal*/
+main .mainPrincipal {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "titulo titulo" "imagenPrincipal imagenPrincipal" "parrafo parrafo"; }
+
+main .tituloPrincipal {
+  font-family: "Medula One";
+  text-align: center;
+  color: #191919;
+  font-size: 4rem;
+  font-weight: bold;
+  grid-area: titulo; }
+
+main .imagenPrincipal {
+  grid-area: imagenPrincipal;
+  display: flex;
+  justify-content: center; }
+
+main .parrafo {
+  grid-area: parrafo; }
+
+main .logoWhatsapp {
+  width: 7%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem; }
+
+main .imgPrincipal {
+  width: 90%; }
+
+/* estilo footer*/
+footer p {
+  color: #191919;
+  font-size: 1rem;
+  text-align: center; }
+
+/*estilo page 2022*/
+main .titulo2022 {
+  font-family: "Medula One";
+  text-align: center;
+  color: #191919;
+  font-size: 4rem;
+  font-weight: bold; }
+
+main .fotosCampanias {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around; }
+
+main section img {
+  width: 40%;
+  object-fit: cover;
+  margin: 0.3rem; }
+
+footer img {
+  width: 7%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem; }
+
+/*estilo page contacto*/
+main fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }

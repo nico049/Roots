@@ -1,0 +1,99 @@
+// variables
+@import "utilities/variables";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo de body */
+body{
+    background-color: $color-fondo;
+}
+/* Estilos nav */
+header{
+    .nav-link{
+    font-family: $estilo-letra; 
+    color: $color-letra;
+    font-weight: bold;
+    font-size: 1.6rem;
+    }
+}
+/* estilo main pagina principal*/
+main{
+    .mainPrincipal{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "titulo titulo"
+                         "imagenPrincipal imagenPrincipal"
+                         "parrafo parrafo";
+    }
+    .tituloPrincipal{
+    font-family: $estilo-letra;
+    text-align: center;
+    color: $color-letra;
+    font-size: 4rem;
+    font-weight: bold;
+    grid-area: titulo;
+    }
+    .imagenPrincipal{
+        grid-area: imagenPrincipal;
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo{
+        grid-area: parrafo;
+    }
+    .logoWhatsapp{
+        width: 7%;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
+        .imgPrincipal{
+        width: 90%;
+    }
+}
+/* estilo footer*/
+footer{
+    p{
+        color: $color-letra;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+/*estilo page 2022*/
+main{
+    .titulo2022{
+    font-family: $estilo-letra;
+    text-align: center;
+    color: $color-letra;
+    font-size: 4rem;
+    font-weight: bold;
+    }
+    .fotosCampanias{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;}
+    section img{
+        width: 40%;
+        object-fit: cover;
+        margin: 0.3rem;}
+    
+}
+footer{
+    img{
+        width: 7%;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+/*estilo page contacto*/
+main{
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
