@@ -81,3 +81,57 @@ main fieldset {
   flex-direction: column;
   align-items: center;
   text-align: center; }
+
+/*estilos page tienda*/
+main .mainTienda {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "titulo titulo" "tarjetas envio" "pie1 pie2" "entrega cambio" "pie3 pie4"; }
+
+main .tituloTienda {
+  grid-area: titulo;
+  font-family: "Medula One";
+  text-align: center; }
+
+main .tarjetas {
+  grid-area: tarjetas; }
+
+main .envio {
+  grid-area: envio; }
+
+main .pieTarjetas {
+  grid-area: pie1; }
+
+main .pieEnvio {
+  grid-area: pie2; }
+
+main .entrega {
+  grid-area: entrega; }
+
+main .cambio {
+  grid-area: cambio; }
+
+main .pieEntrega {
+  grid-area: pie3; }
+
+main .pieCambio {
+  grid-area: pie4; }
+
+main .imagen1 {
+  width: 10%; }
+
+main .imagen2 {
+  width: 10%; }
+
+main .imagen3 {
+  width: 10%; }
+
+main .imagen4 {
+  width: 10%; }
+
+main span {
+  text-align: center;
+  font-family: "Medula One";
+  font-size: 1.5rem; }

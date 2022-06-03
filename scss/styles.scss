@@ -97,3 +97,63 @@ main{
         text-align: center;
     }
 }
+/*estilos page tienda*/
+main{
+    .mainTienda{
+        display: grid;
+        height: 80vh;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "titulo titulo"
+                             "tarjetas envio"
+                             "pie1 pie2"
+                             "entrega cambio"
+                             "pie3 pie4";
+    }
+    .tituloTienda{
+        grid-area: titulo;
+        font-family: $estilo-letra;
+        text-align: center;
+    }
+    .tarjetas{
+        grid-area: tarjetas;
+    }
+    .envio{
+        grid-area: envio;
+    }
+    .pieTarjetas{
+        grid-area: pie1;
+    }
+    .pieEnvio{
+        grid-area: pie2;
+    }
+    .entrega{
+        grid-area: entrega;
+    }
+    .cambio{
+        grid-area: cambio;
+    }
+    .pieEntrega{
+        grid-area: pie3;
+    }
+    .pieCambio{
+        grid-area: pie4;
+    }
+    .imagen1{
+        width: 10%;
+    }
+    .imagen2{
+        width: 10%;
+    }
+    .imagen3{
+        width: 10%;
+    }
+    .imagen4{
+        width: 10%;
+    }
+    span{
+        text-align: center;
+        font-family: $estilo-letra;
+        font-size: 1.5rem;
+    }
+}
