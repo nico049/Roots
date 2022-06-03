@@ -82,12 +82,15 @@ main fieldset {
   align-items: center;
   text-align: center; }
 
+main main form fieldset div a img {
+  width: 0.5%; }
+
 /*estilos page tienda*/
 main .mainTienda {
   display: grid;
   height: 80vh;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-rows: 0.2fr 2fr 0.1fr 0.1fr 0.1fr;
   grid-template-areas: "titulo titulo" "tarjetas envio" "pie1 pie2" "entrega cambio" "pie3 pie4"; }
 
 main .tituloTienda {
@@ -120,7 +123,7 @@ main .pieCambio {
   grid-area: pie4; }
 
 main .imagen1 {
-  width: 10%; }
+  width: 52%; }
 
 main .imagen2 {
   width: 10%; }
@@ -133,5 +136,25 @@ main .imagen4 {
 
 main span {
   text-align: center;
+  font-family: "Medula One";
+  font-size: 1.5rem; }
+
+/* estilos page nosotros*/
+main .mision {
+  font-family: "Medula One";
+  text-align: center;
+  font-size: 4rem; }
+
+main .vision {
+  font-family: "Medula One";
+  text-align: center;
+  font-size: 5rem; }
+
+main .objetivos {
+  font-family: "Medula One";
+  text-align: center;
+  font-size: 3rem; }
+
+main p {
   font-family: "Medula One";
   font-size: 1.5rem; }

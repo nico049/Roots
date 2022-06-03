@@ -96,6 +96,9 @@ main{
         align-items: center;
         text-align: center;
     }
+    main form fieldset div a img{
+        width: 0.5%;
+    }
 }
 /*estilos page tienda*/
 main{
@@ -103,7 +106,7 @@ main{
         display: grid;
         height: 80vh;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-rows: 0.2fr 2fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: "titulo titulo"
                              "tarjetas envio"
                              "pie1 pie2"
@@ -140,7 +143,7 @@ main{
         grid-area: pie4;
     }
     .imagen1{
-        width: 10%;
+        width: 52%;
     }
     .imagen2{
         width: 10%;
@@ -155,5 +158,27 @@ main{
         text-align: center;
         font-family: $estilo-letra;
         font-size: 1.5rem;
+    }
+}
+/* estilos page nosotros*/
+main{
+    .mision{
+        font-family: $estilo-letra;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .vision{
+        font-family: $estilo-letra;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .objetivos{
+        font-family: $estilo-letra;
+        text-align: center;
+        font-size: 3rem;
+    }
+    p{
+        font-family: $estilo-letra;
+        font-size: 1.5rem; 
     }
 }
