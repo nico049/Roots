@@ -1,18 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+@media screen and (min-width: 1024px) {
+  .mainPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .imagenPrincipal {
+    width: 40%; }
+  .logoWhatsapp {
+    display: none; } }
 
-/* estilo de body */
-body {
-  background-color: #726A95; }
-
-/* Estilos nav */
-header .nav-link {
-  font-family: "Medula One";
+/* estilo footer*/
+footer p {
   color: #191919;
-  font-weight: bold;
-  font-size: 1.6rem; }
+  font-size: 1rem;
+  text-align: center; }
+
+footer img {
+  width: 7%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem; }
 
 /* estilo main pagina principal*/
 main .mainPrincipal {
@@ -37,19 +43,13 @@ main .parrafo {
   grid-area: parrafo; }
 
 main .logoWhatsapp {
-  width: 7%;
+  width: 8%;
   position: fixed;
   bottom: 2rem;
   right: 2rem; }
 
 main .imgPrincipal {
   width: 90%; }
-
-/* estilo footer*/
-footer p {
-  color: #191919;
-  font-size: 1rem;
-  text-align: center; }
 
 /*estilo page 2022*/
 main .titulo2022 {
@@ -69,12 +69,6 @@ main section img {
   object-fit: cover;
   margin: 0.3rem; }
 
-footer img {
-  width: 7%;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem; }
-
 /*estilo page contacto*/
 main fieldset {
   display: flex;
@@ -82,79 +76,58 @@ main fieldset {
   align-items: center;
   text-align: center; }
 
-main main form fieldset div a img {
-  width: 0.5%; }
+main .instagram {
+  width: 10%; }
+
+main .facebook {
+  width: 10%; }
 
 /*estilos page tienda*/
-main .mainTienda {
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.2fr 2fr 0.1fr 0.1fr 0.1fr;
-  grid-template-areas: "titulo titulo" "tarjetas envio" "pie1 pie2" "entrega cambio" "pie3 pie4"; }
-
-main .tituloTienda {
-  grid-area: titulo;
+main .textoTienda {
   font-family: "Medula One";
-  text-align: center; }
+  font-size: 3rem; }
 
-main .tarjetas {
-  grid-area: tarjetas; }
-
-main .envio {
-  grid-area: envio; }
-
-main .pieTarjetas {
-  grid-area: pie1; }
-
-main .pieEnvio {
-  grid-area: pie2; }
-
-main .entrega {
-  grid-area: entrega; }
-
-main .cambio {
-  grid-area: cambio; }
-
-main .pieEntrega {
-  grid-area: pie3; }
-
-main .pieCambio {
-  grid-area: pie4; }
-
-main .imagen1 {
-  width: 52%; }
-
-main .imagen2 {
-  width: 10%; }
-
-main .imagen3 {
-  width: 10%; }
-
-main .imagen4 {
-  width: 10%; }
-
-main span {
-  text-align: center;
-  font-family: "Medula One";
-  font-size: 1.5rem; }
+main .col-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /* estilos page nosotros*/
 main .mision {
   font-family: "Medula One";
+  font-weight: bold;
   text-align: center;
   font-size: 4rem; }
 
 main .vision {
   font-family: "Medula One";
+  font-weight: bold;
   text-align: center;
   font-size: 5rem; }
 
 main .objetivos {
   font-family: "Medula One";
+  font-weight: bold;
   text-align: center;
   font-size: 3rem; }
 
 main p {
   font-family: "Medula One";
-  font-size: 1.5rem; }
+  font-size: 1.4rem;
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilo de body */
+body {
+  background-color: #726A95; }
+
+/* Estilos nav */
+header .nav-link {
+  font-family: "Medula One";
+  color: #191919;
+  font-weight: bold;
+  font-size: 1.6rem; }

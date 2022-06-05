@@ -1,0 +1,108 @@
+@import "variables";
+
+/* estilo main pagina principal*/
+main{
+    .mainPrincipal{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "titulo titulo"
+                         "imagenPrincipal imagenPrincipal"
+                         "parrafo parrafo";
+    }
+    .tituloPrincipal{
+    font-family: $estilo-letra;
+    text-align: center;
+    color: $color-letra;
+    font-size: 4rem;
+    font-weight: bold;
+    grid-area: titulo;
+    }
+    .imagenPrincipal{
+        grid-area: imagenPrincipal;
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo{
+        grid-area: parrafo;
+    }
+    .logoWhatsapp{
+        width: 8%;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
+    .imgPrincipal{
+        width: 90%;
+    }
+}
+/*estilo page 2022*/
+main{
+    .titulo2022{
+    font-family: $estilo-letra;
+    text-align: center;
+    color: $color-letra;
+    font-size: 4rem;
+    font-weight: bold;
+    }
+    .fotosCampanias{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;}
+    section img{
+        width: 40%;
+        object-fit: cover;
+        margin: 0.3rem;}
+}
+/*estilo page contacto*/
+main{
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .instagram{
+        width: 10%;
+    }
+    .facebook{
+        width: 10%;
+    }
+}
+/*estilos page tienda*/
+main{
+    .textoTienda{
+        font-family: $estilo-letra;
+        font-size: 3rem;
+    }
+    .col-6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* estilos page nosotros*/
+main{
+    .mision{
+        font-family: $estilo-letra;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .vision{
+        font-family: $estilo-letra;
+        font-weight: bold;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .objetivos{
+        font-family: $estilo-letra;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+    }
+    p{
+        font-family: $estilo-letra;
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+}

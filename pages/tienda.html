@@ -45,24 +45,40 @@
             </div>
         </nav>
     </header>
-    <main class="mainTienda">
-        <h1 class="tituloTienda">Proximamente</h1>
-        <div class="tarjetas">
-            <img class="imagen1" src="../img/tarjetas.png" alt="">
+    <main class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="textoTienda">
+                Próximamente...
+                </h1>
+            </div>
+            <div class="col-6">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade w-55" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/tarjetas.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/envio.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/entrega en 24hs.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/cambio y devolucion.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
-        <span class="pieTarjetas">Todas las Tarjetas</span>
-        <div class="envio">
-            <img class="imagen2" src="../img/envio.jpg" alt="">
-        </div>
-        <span class="pieEnvio">Envío a todo el pais</span>
-        <div class="entrega">
-            <img class="imagen3" src="../img/entrega en 24hs.jpg" alt="">
-        </div>
-        <span class="pieEntrega">Entrega en el gran Mendoza</span>
-        <div class="cambio">
-            <img class="imagen4" src="../img/cambio y devolucion.png" alt="">
-        </div>
-        <span class="pieCambio">Cambio y Devolucion</span>
         <img  class="logoWhatsapp" src="../img/whatsappf-2.jpg" alt="">
     </main>
 

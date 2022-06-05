@@ -1,0 +1,17 @@
+@import "variables";
+/* estilo footer*/
+footer{
+    p{
+        color: $color-letra;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+footer{
+    img{
+        width: 7%;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
