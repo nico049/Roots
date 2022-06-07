@@ -8,6 +8,13 @@
   .logoWhatsapp {
     display: none; } }
 
+main .tituloPrincipal {
+  font-family: "Medula One";
+  text-align: center;
+  color: #191919;
+  font-size: 4rem;
+  font-weight: bold; }
+
 /* estilo footer*/
 footer p {
   color: #191919;
@@ -20,19 +27,18 @@ footer img {
   bottom: 2rem;
   right: 2rem; }
 
-/* estilo main pagina principal*/
-main .mainPrincipal {
-  display: grid;
-  height: 100vh;
-  grid-template-areas: "titulo titulo" "imagenPrincipal imagenPrincipal" "parrafo parrafo"; }
-
 main .tituloPrincipal {
   font-family: "Medula One";
   text-align: center;
   color: #191919;
   font-size: 4rem;
-  font-weight: bold;
-  grid-area: titulo; }
+  font-weight: bold; }
+
+/* estilo main pagina principal*/
+main .mainPrincipal {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "titulo titulo" "imagenPrincipal imagenPrincipal" "parrafo parrafo"; }
 
 main .imagenPrincipal {
   grid-area: imagenPrincipal;
@@ -43,10 +49,11 @@ main .parrafo {
   grid-area: parrafo; }
 
 main .logoWhatsapp {
-  width: 8%;
   position: fixed;
   bottom: 2rem;
-  right: 2rem; }
+  right: 2rem;
+  width: 10%;
+  height: 5%; }
 
 main .imgPrincipal {
   width: 90%; }
@@ -77,10 +84,12 @@ main fieldset {
   text-align: center; }
 
 main .instagram {
-  width: 10%; }
+  width: 10%;
+  height: 5%; }
 
 main .facebook {
-  width: 10%; }
+  width: 10%;
+  height: 5%; }
 
 /*estilos page tienda*/
 main .textoTienda {
@@ -95,26 +104,34 @@ main .col-6 {
 /* estilos page nosotros*/
 main .mision {
   font-family: "Medula One";
+  font-size: 4rem;
   font-weight: bold;
-  text-align: center;
-  font-size: 4rem; }
+  text-align: center; }
 
 main .vision {
   font-family: "Medula One";
+  font-size: 5rem;
   font-weight: bold;
-  text-align: center;
-  font-size: 5rem; }
+  text-align: center; }
 
 main .objetivos {
   font-family: "Medula One";
+  font-size: 3rem;
   font-weight: bold;
-  text-align: center;
-  font-size: 3rem; }
+  text-align: center; }
 
 main p {
   font-family: "Medula One";
   font-size: 1.4rem;
+  font-weight: bold;
   text-align: center; }
+
+main .tituloPrincipal {
+  font-family: "Medula One";
+  text-align: center;
+  color: #191919;
+  font-size: 4rem;
+  font-weight: bold; }
 
 * {
   margin: 0;

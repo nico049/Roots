@@ -1,8 +1,10 @@
 // variables
 @import "utilities/variables";
 @import "utilities/medias";
-@import "utilities/footer";
-@import "utilities/main";
+@import "components/footer";
+@import "components/main";
+@import "utilities/mixins";
+@import "utilities/extend";
 *{
     margin:0;
     padding: 0;

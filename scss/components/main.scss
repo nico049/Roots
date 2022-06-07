@@ -1,4 +1,6 @@
-@import "variables";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extend";
 
 /* estilo main pagina principal*/
 main{
@@ -10,12 +12,7 @@ main{
                          "parrafo parrafo";
     }
     .tituloPrincipal{
-    font-family: $estilo-letra;
-    text-align: center;
-    color: $color-letra;
-    font-size: 4rem;
-    font-weight: bold;
-    grid-area: titulo;
+        @extend %titulo;
     }
     .imagenPrincipal{
         grid-area: imagenPrincipal;
@@ -26,10 +23,10 @@ main{
         grid-area: parrafo;
     }
     .logoWhatsapp{
-        width: 8%;
         position: fixed;
         bottom: 2rem;
         right: 2rem;
+        @include medidas (10%,5%)
     }
     .imgPrincipal{
         width: 90%;
@@ -62,10 +59,10 @@ main{
         text-align: center;
     }
     .instagram{
-        width: 10%;
+        @include medidas (10%,5%)
     }
     .facebook{
-        width: 10%;
+        @include medidas (10%,5%)
     }
 }
 /*estilos page tienda*/
@@ -84,25 +81,22 @@ main{
 main{
     .mision{
         font-family: $estilo-letra;
-        font-weight: bold;
-        text-align: center;
         font-size: 4rem;
+        @include texto (bold, center)
     }
     .vision{
         font-family: $estilo-letra;
-        font-weight: bold;
-        text-align: center;
         font-size: 5rem;
+        @include texto (bold, center)
     }
     .objetivos{
         font-family: $estilo-letra;
-        font-weight: bold;
-        text-align: center;
         font-size: 3rem;
+        @include texto (bold, center)
     }
     p{
         font-family: $estilo-letra;
         font-size: 1.4rem; 
-        text-align: center;
+        @include texto (bold, center)
     }
 }
