@@ -1,6 +1,7 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 @import "utilities/extend";
+@import "utilities/maps";
 
 /* estilo main pagina principal*/
 main{
@@ -58,6 +59,9 @@ main{
         align-items: center;
         text-align: center;
     }
+    main form fieldset legend{
+
+    }
     .instagram{
         @include medidas (10%,5%)
     }
@@ -80,18 +84,18 @@ main{
 /* estilos page nosotros*/
 main{
     .mision{
-        font-family: $estilo-letra;
-        font-size: 4rem;
+        font-family:$estilo-letra;
+        font-size: map-get($map: $tituloComun, $key:4rem );
         @include texto (bold, center)
     }
     .vision{
-        font-family: $estilo-letra;
-        font-size: 5rem;
+        font-family:$estilo-letra;
+        font-size: map-get($map: $tituloPrincipal, $key:5rem );
         @include texto (bold, center)
     }
     .objetivos{
-        font-family: $estilo-letra;
-        font-size: 3rem;
+        font-family:$estilo-letra;
+        font-size: map-get($map: $tituloSecundario, $key:3rem );
         @include texto (bold, center)
     }
     p{

@@ -104,19 +104,16 @@ main .col-6 {
 /* estilos page nosotros*/
 main .mision {
   font-family: "Medula One";
-  font-size: 4rem;
   font-weight: bold;
   text-align: center; }
 
 main .vision {
   font-family: "Medula One";
-  font-size: 5rem;
   font-weight: bold;
   text-align: center; }
 
 main .objetivos {
   font-family: "Medula One";
-  font-size: 3rem;
   font-weight: bold;
   text-align: center; }
 
