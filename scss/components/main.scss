@@ -4,63 +4,67 @@
 @import "utilities/maps";
 
 /* estilo main pagina principal*/
-main{
-    .mainPrincipal{
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "titulo titulo"
-                         "imagenPrincipal imagenPrincipal"
-                         "parrafo parrafo";
+    .imagenesPrincipal{
+        @extend .gridPaginap
     }
-    .tituloPrincipal{
-        @extend %titulo;
+    .imagenHombre{
+        grid-area: imagenMujer;
+        @extend .imagenesFormato
     }
-    .imagenPrincipal{
-        grid-area: imagenPrincipal;
+    .imagenMujer{
+        grid-area: imagenHombre;
+        @extend .imagenesFormato
+    }
+    .imagenNiño{
+        grid-area: imagenNiño;
+        @extend .imagenesFormato
+    }
+    .imagenAccesorios{
+        grid-area: imagenAccesorios;
+        @extend .imagenesFormato
+    }
+    .frasePrincipal{
+        grid-area: frase;
+        font-size: 3rem;
+        background-color: $color-fondo3;
+    }
+    main section div{
         display: flex;
         justify-content: center;
     }
-    .parrafo{
-        grid-area: parrafo;
-    }
-    .logoWhatsapp{
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        @include medidas (10%,5%)
-    }
-    .imgPrincipal{
-        width: 90%;
-    }
-}
-/*estilo page 2022*/
+/*estilo pages ot-inv*/
 main{
-    .titulo2022{
-    font-family: $estilo-letra;
-    text-align: center;
-    color: $color-letra;
-    font-size: 4rem;
-    font-weight: bold;
-    }
-    .fotosCampanias{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-around;}
     section img{
-        width: 40%;
-        object-fit: cover;
-        margin: 0.3rem;}
+        @extend .imagenesFormato2
+    }
+    section{
+        text-align: center;
+    }
 }
 /*estilo page contacto*/
 main{
+    form{
+        background-color: $color-fondo2;
+    }
     fieldset{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    main form fieldset legend{
-
+    legend{
+        font-family: $estilo-letra;
+        font-size: 2rem;
+    }
+    label{
+        font-family: $estilo-letra;
+        font-size: 1.5rem;
+    }
+    input{
+        font-family: $estilo-letra;
+    }
+    textarea{
+        font-family: $estilo-letra;
     }
     .instagram{
         @include medidas (10%,5%)
@@ -69,34 +73,28 @@ main{
         @include medidas (10%,5%)
     }
 }
-/*estilos page tienda*/
-main{
-    .textoTienda{
-        font-family: $estilo-letra;
-        font-size: 3rem;
-    }
-    .col-6{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
 /* estilos page nosotros*/
 main{
+    .nosotros{
+        background-color: $color-fondo2;
+    }
     .mision{
         font-family:$estilo-letra;
         font-size: map-get($map: $tituloComun, $key:4rem );
         @include texto (bold, center)
+        text-decoration:$subrayado;
     }
     .vision{
         font-family:$estilo-letra;
         font-size: map-get($map: $tituloPrincipal, $key:5rem );
         @include texto (bold, center)
+        text-decoration:$subrayado;
     }
     .objetivos{
         font-family:$estilo-letra;
         font-size: map-get($map: $tituloSecundario, $key:3rem );
         @include texto (bold, center)
+        text-decoration:$subrayado;
     }
     p{
         font-family: $estilo-letra;

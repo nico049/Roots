@@ -1,19 +1,15 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 @import "utilities/extend";
+@import "utilities/maps";
 /* estilo footer*/
 footer{
-    p{
+    .copyRight{
+        background-color: $color-fondo;
+        font-family: $estilo-letra;
+        font-size: 1.2rem;
         color: $color-letra;
-        font-size: 1rem;
         text-align: center;
     }
 }
-footer{
-    img{
-        width: 7%;
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-    }
-}
+
